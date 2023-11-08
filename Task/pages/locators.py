@@ -10,8 +10,8 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     BUSKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
-    SUCCESS_MESSAGE =
-    PRODUCT_NAME = (By.XPATH, "//ul/li[5]/text()")
-    BASKET_TOTAL =
-    PRODUCT_PRICE =
+    SUCCESS_MESSAGE = (By.XPATH, "//div[@id='messages']/div[1]/div/strong")
+    PRODUCT_NAME = (By.XPATH, "//ul/li[5]")
+    BASKET_TOTAL = (By.XPATH, "//div[@class='alertinner ']/p/strong")
+    PRODUCT_PRICE = (By.XPATH, "//div[@class='col-sm-6 product_main']/p")
 

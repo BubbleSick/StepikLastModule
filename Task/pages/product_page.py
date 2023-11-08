@@ -1,6 +1,9 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
 class ProductPage(BasePage):
+    def add_to_basket_page_asserts(self):
+        self.should_be_success_message()
+        self.should_be_basket_total()
     def add_product_to_basket(self):
         busket = self.browser.find_element(*ProductPageLocators.BUSKET_BUTTON)
         busket.click()
